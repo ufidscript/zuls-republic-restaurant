@@ -1,0 +1,331 @@
+/* ======= General Styling ======= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c0b09;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* ======= Header ======= */
+
+#header {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #cda45e !important;
+}
+
+.navbar-nav {
+  gap: 12px;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #cda45e;
+}
+
+/* ======= Booking Button ======= */
+
+.book-a-table-btn {
+  display: inline-block;
+  border: 2px solid #cda45e;
+  color: #ffffff;
+  padding: 9px 22px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.book-a-table-btn:hover {
+  background: #cda45e;
+  color: #ffffff;
+}
+
+/* ======= Hero Section ======= */
+
+#hero {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../Images/Nigerian\ Feast\ in\ Warm\ Ambiance.png");
+
+  background-color: #1a1714;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 130px 0 70px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+#hero h1 span {
+  color: #cda45e;
+}
+
+#hero h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #eeeeee;
+}
+
+.hero-description {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #dddddd;
+  line-height: 1.8;
+}
+
+/* ======= Hero Buttons ======= */
+
+.btns {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-menu,
+.btn-book {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #cda45e;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-menu:hover,
+.btn-book:hover {
+  background-color: #cda45e;
+  color: #ffffff;
+}
+
+/* ======= Other Sections ======= */
+
+.content-section {
+  padding: 100px 0;
+  background-color: #0c0b09;
+}
+
+.content-section:nth-of-type(odd) {
+  background-color: #1a1814;
+}
+
+.content-section h2 {
+  color: #cda45e;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.content-section p {
+  color: #dddddd;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* ======= Footer ======= */
+
+#footer {
+  background-color: #000000;
+  padding: 25px 0;
+}
+
+#footer p {
+  margin: 0;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+/* ======= Mobile Responsiveness ======= */
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 20px 0;
+    align-items: flex-start !important;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 0;
+  }
+
+  .book-a-table-btn {
+    margin-top: 10px;
+  }
+
+  #hero {
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 19px;
+  }
+
+  #hero h1 {
+    font-size: 30px;
+  }
+
+  #hero h2 {
+    font-size: 19px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .btn-menu,
+  .btn-book {
+    padding: 10px 22px;
+  }
+}
+
+/* ===== About Section ===== */
+
+.about {
+  padding: 32px 0;
+  background-color: #0c0b09;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #cda45e;
+}
+
+.section-title p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.about-img {
+  min-height: 350px;
+  background-image: url("../Images/tim-toomey-STqHLqMne3k-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* ensure absolutely positioned children are placed relative to this box */
+}
+
+.call-us {
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.call-us h3 {
+  margin: 0;
+  color: #cda45e;
+  font-size: 24px;
+}
+
+.about .content {
+  color: #ffffff;
+}
+
+.about .content p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#history {
+  padding: 32px 0;
+}
+
+#history p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+.history-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .history-img {
+    height: 250px;
+  }
+}
+
+.delicacy-img-1 {
+  background-image: url("../Images/glenov-brankovic-e4B5AvA7Jqo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.delicacy-img-2 {
+  background-image: url("../Images/simon-karemann-p85-MG66GRY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
